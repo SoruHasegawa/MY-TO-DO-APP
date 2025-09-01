@@ -1,0 +1,85 @@
+<style>
+
+ body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+ }
+
+ .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+ }
+
+ h1 {
+    text-align: center;
+    color: #333;
+ }
+
+ #taskinput {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+ }
+
+ button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4caf50;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+ }
+
+ button:hover {
+    background-color: #45a049;
+ }
+
+ #tasklist {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+ }
+
+ .taskitem {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    gap: 10px;
+ }
+
+.taskitem.completed {
+  background-color: #e8f5e9;
+}
+.taskitem.completed .task-text {
+  text-decoration: line-through;
+  color: #666;
+}
+
+.taskitem input[type="checkbox"] { margin-right: 10px; }
+.taskitem .task-text { flex: 1; }
+
+ .deletebtn {
+    background-color: #f44336;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+ }
+
+ .deletebtn:hover {
+    background-color: #da190b;
+ }
+ </style>
